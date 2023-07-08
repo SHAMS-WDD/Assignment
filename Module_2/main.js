@@ -2,7 +2,7 @@
 
   function destructureExample({name, age}, [value0, , value2]) {
    
-    console.log({name, age})
+    console.log({name, age});
   }
   
   const obj = { 
