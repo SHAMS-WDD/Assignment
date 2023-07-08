@@ -12,17 +12,18 @@
 
   const arr = [10, 20, 30, 40];
   
-  // console.log(destructureExample(obj, arr));
-
-//=================================================================
-
-  // Exercise 4:
-
-  function isEven(number) {
-    return number % 2 === 0 ? "Even" : "Odd";
-  }
+  // destructureExample(obj, arr);
   
-//   console.log(isEven(7));   
+  
+//=================================================================== 
+
+  // Exercise 2:
+
+  function sumNumbers(...numbers) {
+    return numbers.reduce((sum, number) => sum + number, 0);
+  }
+
+  // console.log(sumNumbers(1, 2, 3, 4, 5));
 
 
 //===================================================================
@@ -33,19 +34,17 @@
     return `Hello, ${name}! Welcome to our website.`;
   }
     
-//   console.log(createGreeting('Alice'));
+  // console.log(createGreeting('Alice'));
 
+//=================================================================
 
-//===================================================================
+  // Exercise 4:
 
-  // Exercise 2:
-
-  function sumNumbers(...numbers) {
-    return numbers.reduce((sum, number) => sum + number, 0);
+  function isEven(number) {
+    return number % 2 === 0 ? "Even" : "Odd";
   }
-
-//   console.log(sumNumbers(1, 2, 3, 4, 5));
-
+  
+  // console.log(isEven(7));   
 
 
 //===================================================================
@@ -54,7 +53,7 @@
 
   const multiply = (a, b) => a * b;
 
-// console.log(multiply(2,3));
+  
 
 
 //===================================================================
@@ -62,10 +61,10 @@
   // Exercise 6:
 
   function getLarge(x,y){
-  return (x>y && x || y) ?? "Please enter value";
+  return (x>y && x || y) ?? "There are no values to compare";
   }
 
-// console.log(getLarge(10,5));
+  // console.log(getLarge(10,5));
 
 
 //===================================================================
@@ -130,3 +129,7 @@
   }
 
 console.log(sortNumbers ([5, 2, 8, 1, 4]));
+
+
+
+//======================End=======================
