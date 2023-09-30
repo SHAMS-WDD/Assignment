@@ -1,19 +1,12 @@
 <template>
-  <main class="container mx-auto flex border">
-  
-    
-  </main>
-
   <section class="flex h-screen">
-   
-      <main class="w-full p-5">
-        <div class="mx-auto text-center">
-          <h1 class="text-3xl bold">Dashboard</h1>
-          <p>Welcome, {{ currentUser.email }}</p>
-      
-        </div>
-      </main>
-    </section>
+    <main class="w-full p-5">
+      <div class="mx-auto text-center">
+        <h1 class="text-3xl bold">Dashboard</h1>
+        <p>Welcome, {{ currentUser.email }}</p>
+      </div>
+    </main>
+  </section>
    
 </template>
   

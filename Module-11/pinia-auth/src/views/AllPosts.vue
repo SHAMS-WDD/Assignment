@@ -1,18 +1,15 @@
 <template>
       
     <section class="flex h-screen">
-     
-        <main class="w-full p-5">
-          <div class="mx-auto text-center">
-            <h1 class="text-3xl bold">All Posts</h1>
-        </div>
+     <main class="w-full p-5">
+      <div class="mx-auto text-center">
+        <h1 class="text-3xl bold">All Posts</h1>
+      </div>
         </main>
-      </section>
+    </section>
      
   </template>
     
-    <script setup>
+  <script setup>
       
-    
-    
-    </script>
+  </script>

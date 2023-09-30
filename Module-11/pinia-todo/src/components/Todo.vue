@@ -1,53 +1,3 @@
-<!-- <template>
-  <main>
-    <div class="container mx-auto">
-      <h1>Todo App</h1>
-     <div>{{ todoStore.satus }}</div>
-    <input v-model="newTask" @keyup.enter="addTask" placeholder="Add a new task" />
-    <button @click="addTask">Add Task</button>
-    <ul>
-      <li v-for="(task, index) in tasks" :key="index" class="flex space-x-3 items-center border">
-        <input type="checkbox" v-model="task.status" @change="toggleTaskStatus(task, index)" />
-        <span>{{ task.name }}</span><span>status: {{ getStatusText(task.status)}}</span>
-        <button @click="removeTask(index)">Delete</button>
-      </li>
-    </ul>
-  </div>
-  </main>
-  
-</template>
-
-<script setup>
-import { ref } from 'vue';
-import { useTodoStore } from '../store/todostore';
-
-const todoStore = useTodoStore();
-const newTask = ref('');
-const tasks = todoStore.tasks;
-
-
-const addTask = () => {
-  if (newTask.value.trim() !== '') {
-    todoStore.addTask(newTask.value);
-    newTask.value = '';
-  }
-};
-
-const removeTask = (index) => {
-  todoStore.removeTask(index);
-};
-
-const toggleTaskStatus = (task, index) => {
-  
- 
-  todoStore.toggleTaskStatus(index);
-
-};
-const getStatusText = (status) => {
-  return status ? 'Done' : 'Undone';
-};
-</script> -->
-
 <template>
   <main class="container mx-auto w-[50%]">
     <div class="container mx-auto p-2 bg-slate-50 shadow-md mt-5">
@@ -79,14 +29,6 @@ const getStatusText = (status) => {
           </tr>
         </tbody>
       </table>
-
-      <!-- <ul>
-        <li v-for="(task, index) in tasks" :key="index" class="flex space-x-3 items-center justify-between border">
-          <input type="checkbox" :checked="task.status === 'Done'" @change="toggleTaskStatus(index)" />
-          <span>{{ task.name }}</span><span :style="{ color: task.status === 'Done' ? 'green' : 'red' }">status: {{ task.status }}</span>
-          <button @click="removeTask(index)" class="bg-red-600 text-white p-1 rounded-md">Delete</button>
-        </li>
-      </ul> -->
     </div>
   </main>
 </template>
