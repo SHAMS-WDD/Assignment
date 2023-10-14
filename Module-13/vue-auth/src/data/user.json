@@ -1,0 +1,10 @@
+
+    {
+    "user":{
+        "name":"Milon",
+        "password":123,
+        "role":"admin",
+        "DOB":"08/17/1980",
+        "pic":"images/profile-1.png"
+    }
+}
