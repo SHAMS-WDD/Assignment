@@ -22,10 +22,7 @@ const authStore = reactive({
             }
         })
     },
-    editProfile(){
-        console.log(authStore.user)
-        localStorage.setItem('user',JSON.stringify(authStore.user))
-    },
+   
     logout(){
         authStore.isAuthenticated = false
         authStore.user = {}
@@ -33,6 +30,14 @@ const authStore = reactive({
         localStorage.setItem('user', '{}')
         router.push('/login')
     }
+
+
+
+
+
+
+
+
 
 })
 
