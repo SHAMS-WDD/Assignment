@@ -19,9 +19,9 @@ const auth = authStore
           <li>
             <router-link to="/products">Products</router-link>
           </li>
-          <li>
+          <!-- <li>
             <router-link to="/cart">Cart ( {{ cart.totalCartItems }} )</router-link>
-          </li>
+          </li> -->
           <li v-if="auth.isAuthenticated">
             <router-link to="/orders">Orders </router-link>
           </li>
@@ -30,9 +30,9 @@ const auth = authStore
             <router-link to="/admin">Admin</router-link>
           </li>
         
-          <li v-if="!auth.isAuthenticated">
+          <!-- <li v-if="!auth.isAuthenticated">
             <router-link to="/login">Login</router-link>
-          </li>
+          </li> -->
         </ul>
       </section>
 </template>
